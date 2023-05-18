@@ -1,25 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquete01;
 
-/**
- *
- * @author reroes
- */
+
+import paquete04.Colegio;
 public class LibretaCalificacion {
 
     private String estudiante;
     private double promedio;
     private String promedioCualitativo;
     private double[] calificaciones;
-    // private Colegio c;
+    private Colegio colegio;
 
-    public LibretaCalificacion(String n, double[] c) {
+    public LibretaCalificacion(String n, double[] c, Colegio col) {
+        
         estudiante = n;
         calificaciones = c;
+        colegio = col;
     }
 
     public void establecerEstudiante(String n) {
@@ -64,6 +59,12 @@ public class LibretaCalificacion {
     public void establecerCalificaciones(double[] n) {
         calificaciones = n;
     }
+    
+    public void establecerColegio(Colegio c){
+    
+        colegio = c;
+        
+    }
 
     public String obtenerEstudiante() {
         return estudiante;
@@ -80,11 +81,17 @@ public class LibretaCalificacion {
     public double[] obtenerCalificaciones() {
         return calificaciones;
     }
-
+    
+    public Colegio obtenerColegio(){
+    
+        return colegio;
+        
+    }
+    
     @Override
     public String toString() {
         String cadena = "Libreta de Calificaciones\n";
-        cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
+        cadena = String.format("%s Colegio: %S\n Ciudad: %S\n Calificaciones:\n ",cadena, colegio.obtenerNombre(), colegio.obtenerCiudad(),
                 obtenerEstudiante());
         // cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
         //        estudiante);

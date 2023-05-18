@@ -34,7 +34,7 @@ public class Ejecutor {
         System.out.println("Ingrese el número de calificaciones");
         numerocalificaciones = entrada.nextInt();
 
-        entrada.nextLine();
+        entrada.nextLine(); // Limpiar el Buffer
 
         // con el numerocalificaciones se crea el objeto arreglo de
         // calificaciones tipo Calificacion

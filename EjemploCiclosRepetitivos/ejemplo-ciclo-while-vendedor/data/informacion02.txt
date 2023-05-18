@@ -1,0 +1,14 @@
+Datos de Vendedor
+Nombre: Vendedor 1
+Edad: 21
+Salario mínimo: 458.00
+Número de autos: 5
+Pago mensual: 1208.00
+
+Datos de Vendedor
+Nombre: Vendedor 2
+Edad: 22
+Salario mínimo: 458.00
+Número de autos: 6
+Pago mensual: 1358.00
+
