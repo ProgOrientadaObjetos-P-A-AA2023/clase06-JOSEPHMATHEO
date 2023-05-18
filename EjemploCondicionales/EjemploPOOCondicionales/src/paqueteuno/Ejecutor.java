@@ -18,6 +18,7 @@ public class Ejecutor {
         Scanner entrada = new Scanner(System.in);
 
         // varibles para almacenar valores ingresados por teclado
+        
         String nombreHospital;
         String ciudadDeHospital;
         int numeroDeCamas;

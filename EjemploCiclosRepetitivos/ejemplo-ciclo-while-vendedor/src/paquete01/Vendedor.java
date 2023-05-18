@@ -24,6 +24,7 @@ public class Vendedor {
         salarioMinimo = sMinimo;
         establecerNumeroAutos(nAutos);
         comisionPorAuto = 150;
+        
     }
 
     public void establecerNombres(String c) {
